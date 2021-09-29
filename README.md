@@ -1,4 +1,4 @@
-# TMDB-Torrent-Movie-Database
+# IMDB-Torrent-Movie-Database
 A chrome extension that allows users to instantly get torrent link of the movie/TV show they are currently browsing on imdb.
 ## Usage
 1. Clone this repo using `git clone https://github.com/singhkumarpratik/TMDB-Torrent-Movie-Database.git`.
