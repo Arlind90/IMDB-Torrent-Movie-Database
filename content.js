@@ -17,7 +17,7 @@ if(Object.values(imdbList).includes(locList)){
     locId=loc[1].split('/')[1];
     if(document.getElementById('titleYear')){
         let item = document.getElementById('titleYear');
-        item.innerHTML +='<span class="lister-item-year text-muted">'+ '<a href=https://tpblautbay.one/search.php?q=' + locId +' target="_blank">'+'<img src='+imgURL2+' alt="TPB">'+'</a>'+'</span>'+'<span class="lister-item-year text-muted">'+ '<a href=https://rarbgaccess.org/torrents.php?search=' + locId +' target="_blank">'+'<img src='+imgURL1+' alt="RARBG">'+'</a>'+'</span>';
+        item.innerHTML +='<span class="lister-item-year text-muted">'+ '<a href=https://rarbgaccess.org/torrents.php?search=' + locId +' target="_blank">'+'<img src='+imgURL1+' alt="RARBG">'+'</a>'+'</span>';
     } else {
         let item = document.getElementsByClassName("title_wrapper")[0];
         let h1 = document.getElementsByClassName("TitleHeader__TitleText-sc-1wu6n3d-0")[0];
