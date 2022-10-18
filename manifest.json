@@ -1,24 +1,34 @@
 {
-	"manifest_version": 2,
-	"name": "TMDB-Torrent Movie Database",
-	"description": "Directly get torrent link of your favorite movie/TV show!",
-	"version": "1.01",
-	"web_accessible_resources":[
-		"*.png"
-	],
-	"browser_action":{
-		"default_icon": "icon.png"
-	},
-	"content_scripts": [
-		{
-			"matches": [
-				"https://www.imdb.com/list/*",
-				"https://www.imdb.com/best-of/*",
-				"https://www.imdb.com/title/*",
-				"https://www.imdb.com/search/title*",
-				"https://www.imdb.com/user/*/watchlist"
-			],
-			"js": ["content.js"]
-		}
-	]
-  }
+  "manifest_version": 3,
+  "name": "TMDB-Torrent Movie Database",
+  "description": "Directly get torrent link of your favorite movie/TV show!",
+  "version": "1.01",
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "*.png"
+      ],
+      "matches": [
+        "<all_urls>"
+      ]
+    }
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.imdb.com/list/*",
+        "https://www.imdb.com/best-of/*",
+        "https://www.imdb.com/title/*",
+        "https://www.imdb.com/search/title*",
+        "https://www.imdb.com/user/*/watchlist"
+      ],
+      "js": [
+        "content.js"
+      ]
+    }
+  ],
+  "action": {
+    "default_icon": "icon.png"
+  },
+  "content_security_policy": {}
+}

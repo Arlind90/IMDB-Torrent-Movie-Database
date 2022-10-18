@@ -2,8 +2,7 @@ let imdbList = ['list','best-of','search','user'];
 loc = location.href;
 loc = loc.split('https://www.imdb.com/');
 locList = loc[1].split('/')[0];
-let imgURL1 = chrome.extension.getURL('rarbg.png');
-let imgURL2 = chrome.extension.getURL('tpb.png');
+let imgURL1 = "https://dyncdn.me/static/20/img/logo_dark_nodomain2_optimized.png"
 
 if(Object.values(imdbList).includes(locList)){
     let item = document.getElementsByClassName('lister-item-header');
@@ -23,8 +22,8 @@ if(Object.values(imdbList).includes(locList)){
         +'<a href=https://rarbgunblock.org/torrents.php?search=' + locId +' target="_blank">'
         +'<img src='+imgURL1+' alt="RARBG">'+'</a>'+'</span>';
     } else {
-        let item = document.getElementsByClassName("title_wrapper")[0];
-        let h1 = document.getElementsByClassName("TitleHeader__TitleText-sc-1wu6n3d-0")[0];
+        // let item = document.getElementsByClassName("title_wrapper")[0];
+        let h1 = document.getElementsByClassName("sc-b73cd867-0 cAMrQp")[0];
         let node = document.createElement("h1");
         node.innerHTML='<span class="lister-item-year text-muted" style="margin-left: 20px;">'
         +'<a href=https://rarbgunblock.org/torrents.php?search=' + locId +' target="_blank">'
